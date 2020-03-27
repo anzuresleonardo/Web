@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Document</title>
+</head>
+
+<body>
+    <br>
+    <br>
+    <br>
+        <div  class="mx-auto border border-primary" style="width: 300px; height: 600px; text-align: center;">
+                <br>
+                <br>
+                <img src="https://66.media.tumblr.com/0a4408e1e6fa24a569ff8d738b207a0e/tumblr_pigc2nZqrC1vdii4h_1280.jpg" alt="..." class="rounded-circle" style="width: 100px;">
+                <br>
+                <br>
+            <form action ="" method="POST">
+                {%csrf_token%}
+                
+                    <div class="form-group">
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="Email" name="user" required>
+                      </div>
+                      <br>
+                      <br>
+                      <div class="col">
+                        <input type="password" class="form-control" placeholder="password" name="password" required>
+                      </div>
+                    </div>
+                  
+                <br>
+                <br>
+                <div style="text-align: center;">
+                  <button type="submit">Aceptar</button>
+                  <br>
+                  <br>
+                    {% if error %}
+                    <div class="alert alert-warning" role="alert">
+                        {{error}}
+                    </div>
+                    {% endif %}
+                </div>
+              
+              <br>
+              <br>
+              </form>
+              
+              
+        
+        </div>
+      
+ 
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    
+</body>
+
+
+</html>
